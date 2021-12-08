@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+div{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161853;
+}
+table {
+    border-collapse: collapse;
+    width: 70%;
+    letter-spacing: 1px;
+  font-size: 1.5em;
+  
+  }
+
+  th, td {
+    border: 1px dotted lightseagreen;
+    padding: 5px 20px;
+    
+  }
+  
+td{
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    
+}
+  tr:nth-child(even) td {
+    background-color: #FAEDF0;
+  }
+  tr:nth-child(odd) td {
+    background-color: #EC255A;
+  }
+  th{
+      background-color: green;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
