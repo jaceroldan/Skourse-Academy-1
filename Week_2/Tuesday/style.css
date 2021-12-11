@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    height: 100%;
+}
+
+.bg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    background-image: url("./assets//Sky.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dark-color{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    opacity: 0.45;
+    z-index: 0;
+}
+.form-address{
+    padding: 20px;
+    width: 70%;
+    background-color: aliceblue;
+    height: 500px;
+    z-index: 100;
+
+}
+
+.padding{
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .responsive{
+        display: inline;
+    }
+    .responsive-btn{
+        display: inline;
+    }
+   
+  }
