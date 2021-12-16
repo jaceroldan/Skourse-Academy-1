@@ -11,6 +11,9 @@ body {
 	padding: 0;
 	margin: 0;
 }
+a{
+  text-decoration: none;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -274,6 +277,7 @@ nav .icon-burger .line {
   }
   .portfolio .portfolio-item .portfolio-item-caption:hover {
     opacity: 1;
+   
   }
   .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
     font-size: 1.5rem;
@@ -283,7 +287,13 @@ nav .icon-burger .line {
   max-width: 100%;
   height: auto;
 }
+.picture{
+  cursor:pointer;
+}
 
+.project{
+  height: 200px;
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
