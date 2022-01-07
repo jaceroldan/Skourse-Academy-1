@@ -25,6 +25,7 @@ class Library {
     finishedCurrentBook(){
         if(this.currentBook){
             ++this.numOfBooksRead;
+            --this.numOfBooksNotRead;
             this.lastBook = this.currentBook;
             if(this.nextBook){
                 this.currentBook = this.nextBook;
@@ -53,13 +54,15 @@ const Book1 = new Book("Elvin","Book of Pandora","Scie-fi","02/02/2020");
 const Book2 = new Book("Rey","Book of Sins","Fiction","02/02/2020");
 const Book3 = new Book("Rey","Book of Cuteness","Fiction","02/02/2020");
 const Book4 = new Book("Rey2","Book of Awesome","Documentary","03/12/2020");
+const Book5 = new Book("Saavedra","Book of Deminise","Documentary","03/12/2020");
 const Library1 = new Library();
 Library1.addBook(Book1);
 Library1.addBook(Book2);
 Library1.addBook(Book3);
 Library1.addBook(Book4);
+Library1.addBook(Book5);
 console.log(Library1)
 
 Library1.finishedCurrentBook(Book1);
 Library1.finishedCurrentBook(Book2);
-
+Library1.finishedCurrentBook(Book3);
