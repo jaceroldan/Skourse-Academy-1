@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #c4c4c4;
+}
+.navigation{
+ margin-bottom: 2rem;
+}
+.navigation ul{
+    
+    display:flex;
+    justify-content: space-evenly;
+  
+   
+}
+.navigation ul li{
+    cursor:pointer;
+    text-align: center;
+    border-radius: 20px;
+    width:50px;
+    background: #8b8888;
+    list-style-type: none;
+}
+.navigation ul li:hover{
+    background: #303030;
+    color: #ffff;
+    transition: 0.5s ;
+}
+.container{
+    display:inline-block;
+   
+    
+}
+
+.active{
+    background: #303030;
+    color: #ffff;
+}
+
+.display{
+    visibility:hidden;
+    opacity: 0;
+    display:none;
+}
+
+
+.box{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    background:#c84843;
+    box-shadow: 0 10px 5px -6px rgba(0,0,0, 0.5);
+    padding-top: 50px;
+    display: inline-block;
+}
+
+.box2{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    background:#c84843;
+    box-shadow: 0 10px 5px -6px rgba(0,0,0, 0.5);
+    padding-top: 50px;
+    display: none;
+}
+.clock-format{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+.clock-format input{
+ margin:0px;
+}
+
+.row{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.hours,.minutes,.seconds{
+    
+    border-radius: 20px;
+    background:#303030;
+    margin: 8px;
+    padding: 10px;
+    box-shadow: 0 6px 6px -6px rgba(0,0,0, 0.7);
+    
+}
+
+canvas{
+    position: relative;
+    height: 50px;
+    
+}
+.timer-div{
+    width: 100%;
+    padding:10px;
+    display:inline-block;
+    margin: auto;
+    text-align: center;
+}
+.timer{
+    margin: 0.5rem;
+    display:inline-block;
+    width:4rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.timer::-webkit-outer-spin-button,
+.timer::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.button-timer{
+    display:flex;
+    justify-content: center;
+    position: relative;
+   
+}
+
+.start, .reset{
+    margin: 0.5rem;
+    display:inline-block;
+    width:4rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid rgba(0,0,0, 0.5);
+    background:#008CBA;
+    color:#fff;
+    cursor: pointer;
+    
+}
+
+.btn-color{
+    background: #f44336;
+}
+
+.start:active, .reset:active{
+    background:#003041;
+}

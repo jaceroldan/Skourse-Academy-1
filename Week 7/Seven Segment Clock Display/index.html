@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven-Segment Display</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li class="active" id="clock">Clock</li>
+                <li class="" id="timer">Timer</li>
+            </ul>
+        </nav>
+
+        <div class="box" id="box">
+            <div class="row" id="row">
+                <div class="hours">
+                    <canvas id='canvas' width="100" height="150" ></canvas>
+                    <canvas id='canvas2' width="100" height="150" ></canvas>
+                </div>
+                <div class="minutes">
+                    <canvas id='canvas3' width="100" height="150" ></canvas>
+                    <canvas id='canvas4' width="100" height="150" ></canvas>
+                </div>
+                <div class="seconds">
+                    <canvas id='canvas5' width="100" height="150" ></canvas>
+                    <canvas id='canvas6' width="100" height="150" ></canvas>
+                </div>
+                <p id="format"></p>
+            </div>
+            <form class="clock-format">
+                <div class="12hour">
+                    <input type="radio" id="12hour" name="hour-format" value="12hour" checked>
+                    <label for="12hour">12 Hour Format</label>
+                </div>
+                <div class="24hour">
+                    <input type="radio" id="24hour" name="hour-format" value="24hour" >
+                    <label for="24hour">24 Hour Format</label>
+                </div>
+              
+            </form>
+        </div>
+
+        <div class="box" id="box2">
+            <div class="row" id="row">
+                <div class="hours">
+                    <canvas id='canvas7' width="100" height="150" ></canvas>
+                    <canvas id='canvas8' width="100" height="150" ></canvas>
+                </div>
+                <div class="minutes">
+                    <canvas id='canvas9' width="100" height="150" ></canvas>
+                    <canvas id='canvas10' width="100" height="150" ></canvas>
+                </div>
+                <div class="seconds">
+                    <canvas id='canvas11' width="100" height="150" ></canvas>
+                    <canvas id='canvas12' width="100" height="150" ></canvas>
+                </div>
+               
+            </div>
+            <div class="timer-div">
+                <label for="hours-number">Hour</label>
+                <input type="number" id="hours-number" class="timer" value="0" min="1" max="99" >
+                <label for="hours-number">Minutes</label>
+                <input type="number" id="minutes-number" class="timer" value="0" min="1" max="59">
+                <label for="hours-number">Seconds</label>
+                <input type="number" id="seconds-number"class="timer" value="0" min="1" max="59">
+            </div>
+            <div class="button-timer">
+                <input type="button" id="start" class="start" placeholder="Minutes" value="Start">
+                <input type="button" id="reset" class="reset btn-color" placeholder="Seconds" value="Reset">
+            </div>
+        </div>
+            
+    </div>
+    <script src="segment.js"></script>
+</body>
+</html>
